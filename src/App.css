@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header{
+  margin-top: 30px;
+  display:block;
+  text-align:center
+}
+.pokeball{
+  max-width: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.search-bar{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 6px;
+  width: 25%;
+  border: 3px solid;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokegrid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  margin-left: 40px;
+  margin-right:40px;
+}
+
+.container{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container:hover{
+  cursor: pointer;
+  background-color: rgb(235, 235, 235);
+}
+
+.container:active{
+  background-color: rgb(172, 172, 172);
+}
+
+.pokeimages{
+  width: 150px;
+  height: 150px;
+  
+}
+
+.desc{
+  margin-top: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pokeimages.deets{
+  width: 220px;
+  height: 230px;
+  padding: 50px;
+  margin-right: 30px
+}
+
+.deets{
+  margin-left:10px;
+}
+
+.types{
+  border:1px solid;
+  border-radius: 7px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right:2px;
+}
+
+.abilities{
+  /* border:1px solid black;
+  border-radius: 7px; */
+  padding-right: 2px;
+
+}
+
+.electric{
+  color: rgb(204,204,0);
+}
+
+.water{
+  color: navy;
+}
+
+.grass{
+  color: darkgreen;
+}
+
+.poison{
+  color: purple;
+}
+
+.flying{
+  color: #A890F0;
+}
+
+.fire{
+  color: #F08030;
+}
+
+.bug{
+  color: #A8B820;
+}
+
+.normal{
+  color: #A8A878;
+}
+
+.ground{
+  color: #E0C068;
+}
+
+.fairy{
+  color: #EE99AC;
+}
+
+.fighting{
+  color: #C03028;
+}
+
+.psychic{
+  color: #F85888
+}
+
+.ghost{
+  color:#705898;
+}
+
+.ice{
+  color: #98D8D8;
+}
+
+.rock{
+  color: #B8A038;
+}
+
+.dragon{
+  color:#7038F8;
 }

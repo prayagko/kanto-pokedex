@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Search from './Search'
+import {Router, Link} from '@reach/router';
+import Details from './Details'
 import './App.css';
 
 function App() {
+  console.log("Learn")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="header">
+        <Link to="/">
+          <img className ="pokeball" src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball"></img>
+        </Link>
+      </div>
+      <Router>
+        <Search path="/"/>
+        <Details path="/details/:id"/>
+      </Router>
+      
     </div>
   );
 }
