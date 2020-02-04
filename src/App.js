@@ -5,12 +5,12 @@ import Details from './Details'
 import './App.css';
 
 function App() {
-  console.log("Learn")
+
   return (
     <div className="main">
       <div className="header">
         <Link to="/">
-          <img className ="pokeball" src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball"></img>
+          <img className ="pokeball" src="/images/Pokeball.png" alt="pokeball"></img>
         </Link>
       </div>
       <Router>
