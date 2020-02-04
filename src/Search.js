@@ -11,10 +11,10 @@ const Search =()=>{
     const pokelist = pokemen.map(
         (p, i)=>({id:i+1,
             name:p}))
-            
+
     function autoComplete(Arr, input) {
     
-        return Arr.filter(e =>e.name.slice(0,input.length)===input)
+        return Arr.filter(e =>e.name.slice(0,input.length)===input.toLowerCase())
         }
     
     const handleChange = (e)=>{

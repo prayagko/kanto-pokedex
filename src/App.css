@@ -62,11 +62,11 @@ body {
 }
 
 .dex{
+  padding:20px;
 }
 
 .desc{
   margin: auto;
-  margin-top: 20px;
   display:flex;
   flex-direction: row;
   justify-content: center;
