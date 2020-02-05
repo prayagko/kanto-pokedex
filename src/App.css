@@ -41,8 +41,6 @@ body {
 
 
 .container{
-  /* margin-left: 30px;
-  margin-right:30px; */
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
@@ -74,6 +72,11 @@ body {
   text-align: center;
   color:#017698;
   text-decoration: underline;
+}
+
+.loader{
+font-weight: bold;
+text-align: center;
 }
 
 .dex{
@@ -339,13 +342,10 @@ flex-direction: column;
   margin-right:2px;
 }
 
-.abilities{
-  /* border:1px solid black;
-  border-radius: 7px; */
-  /* padding-right: 2px; */
-
+.error{
+  text-align: center;
+  font-weight: bold;
 }
-
 .electric{
   background-color: rgb(204,204,0);
   color:white;
@@ -423,5 +423,15 @@ flex-direction: column;
 
 .dragon{
   background-color:#7038F8;
+  color:white;
+}
+
+.dark{
+  background-color:#705848;
+  color:white;
+}
+
+.steel{
+  background-color:#B8B8D0;
   color:white;
 }

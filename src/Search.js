@@ -38,12 +38,14 @@ const Search =()=>{
             </div>
             <div className="pokegrid">
                 {match.map(m=>(
-                    <div key={m.id} className='container'>
-                        <Link to={`/details/${m.id}`}>
-                            <img src={`./images/${m.id}.png`} alt={m.name} className = "pokeimages"></img>
-                            <p className="pokename">{m.name.toUpperCase()}</p>
-                        </Link>
-                    </div>))}
+                    <Link key={m.id} to={`/details/${m.id}`}>
+                        <div className='container'>
+                                <img src={`./images/${m.id}.png`} alt={m.name} className = "pokeimages"></img>
+                                <p className="pokename">{m.name.toUpperCase()}</p>
+                        
+                        </div>
+                    </Link>
+                    ))}
             </div>
         </div>
     )
