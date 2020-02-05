@@ -28,9 +28,9 @@ const Search =()=>{
     }
     return(
         <div>
-            <div className="search-bar">
+            <div className="searchBar">
                 <input 
-                    className="search-box"
+                    className="searchBox"
                     placeholder='Search...'
                     onChange={event=>handleChange(event)}
                     value={searchTerm}
@@ -41,6 +41,7 @@ const Search =()=>{
                     <div key={m.id} className='container'>
                         <Link to={`/details/${m.id}`}>
                             <img src={`./images/${m.id}.png`} alt={m.name} className = "pokeimages"></img>
+                            <p className="pokename">{m.name.toUpperCase()}</p>
                         </Link>
                     </div>))}
             </div>

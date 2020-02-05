@@ -16,7 +16,6 @@ function Details(props){
         const {flavor_text_entries} = await speciesResponse.json()
         const descriptionArray = flavor_text_entries.filter(d=>d.language.name==="en"&&d.version.name==="firered")
         const description = descriptionArray[0].flavor_text
-        console.log('desc', description)
         setPokemon({name, stats, height, weight, abilities, types, description}||{})
       }
 
@@ -29,8 +28,8 @@ function Details(props){
         <div className="dex">
             {!!Object.keys(pokemon).length?
                 (<div className="desc">
-                    <div className="screen-panel">
-                        <div className="screen-panel-top">
+                    <div className="screenPanel">
+                        <div className="screenPanelTop">
                             <div className="camled">
                                 <div className="camera"></div>
                                 <div className="led"></div>
@@ -46,13 +45,25 @@ function Details(props){
                         <div className="screen">
                             <img src={`/images/${props.id}.png`} alt={pokemon.name} className = "image"></img>
                         </div>
-                        <div className="arrow-buttons">
-                            <div className="left-button"></div>
-                            <div className="right-button"></div>
-                            
+                        <div className="sideButtons">
+                            <div className="leftSideButton"></div>
+                            <div className="rightSideButton"></div>
+                        </div>
+                        <div className="buttonPanel">
+                            <div className="abButtons">
+                                <div className="aButton"></div>
+                                <div className="bButton"></div>
+                            </div>
+                            <div className="arrowButtons">
+                                <div className="up"></div>
+                                <div className="center"></div>
+                                <div className="down"></div>                            
+                                <div className="left"></div>
+                                <div className="right"></div>
+                            </div>
                         </div>
                     </div>
-                    <div className="info-panel">
+                    <div className="infoPanel">
                         <div className="detail">
 
                             <h1 className="name">
