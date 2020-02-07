@@ -21,6 +21,7 @@ body {
 
 .searchBox{
   display: block;
+  font-size: 16px;
   margin : 0 auto;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -28,6 +29,7 @@ body {
   width: 35%;
   border: 3px solid #017698;
   border-radius: 5px;
+
 }
 
 .pokegrid{
