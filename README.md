@@ -1,6 +1,6 @@
 Unnecessarily full stack pokedex. This repo is just the frontend.
 
-**https://simple-pokedex.netlify.app/details**
+**https://simple-pokedex.netlify.app**
 
 Frontend - React, CSS (Pokedex design made fully with CSS)
 
