@@ -15,9 +15,6 @@ body {
   max-width: 9%;
 }
 
-.searchBar{
-}
-
 
 .searchBox{
   display: block;
@@ -100,6 +97,7 @@ text-align: center;
   background-color: #C9172C;
   border-radius: 10px;
   min-width: 250px;
+  box-shadow: 1px 1px 15px 1px inset;
 }
 
 .infoPanel{
@@ -108,11 +106,17 @@ text-align: center;
   border-radius:10px;
   min-width: 250px;
   background-color:#C9172C;
+  box-shadow: 1px 1px 15px 1px inset;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
 }
 
 .image{
-  width: 130px;
-  height: 130px;
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 
@@ -137,7 +141,7 @@ flex-direction: column;
   flex:1;
   display:flex;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-right: 6px;
   
 }
 
@@ -177,31 +181,35 @@ flex-direction: column;
 
 .screen {
   background-color: #E0FAF9;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
   border: solid 4px black;
   border-radius: 9px;
   display: flex;
   justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .sideButtons{
   display:flex;
   justify-content: space-between;
-  padding-left:30px;
-  padding-right:30px;
-  padding-bottom: 10px;
+  padding-left:40px;
+  padding-right:40px;
+  padding-bottom: 15px;
 }
 
 .rightSideButton{
   width: 0; 
   height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  border-left:10px solid blue; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  border-left:8px solid royalblue; 
   position: relative;
-  bottom: 10px; 
+  bottom: 15px; 
+  box-shadow: -0.2px 0px 0.01px 0.01px rgb(61, 73, 109);
 }
 
 
@@ -209,18 +217,18 @@ flex-direction: column;
 .leftSideButton{
   width: 0; 
   height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  border-right:10px solid blue; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  border-right:8px solid royalblue; 
   position: relative;
-  bottom: 10px;
-
+  bottom: 15px;
+  box-shadow: 1px 0px 0.01px 0.01px rgb(61, 73, 109);
 }
 
 
 .buttonPanel {
   display: flex;
-  height: 80px;
+  /* height: 80px; */
   position: relative;
   bottom: 12px;
 }
@@ -230,24 +238,25 @@ flex-direction: column;
 }
 
 .aButton{
-  border: 1px solid #51975b;
+  /* border: 1px solid #51975b; */
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   position: relative;
   margin: 0 auto;
   background-color: #55b263;
+  box-shadow: 0px 0px 3px 2px #447e4c inset;
 }
 
 .bButton{
-  border: 1px solid #66a386;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   position: relative;
   margin: 0 auto;
   right: 25px;
   background-color: #6fcb9f;
+  box-shadow: 0px 0px 3px 2px #3d946a inset;
 }
 
 .arrowButtons{
@@ -260,7 +269,7 @@ flex-direction: column;
     background-color: #9b9999;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    box-shadow: -2px 0px 0px #767575;
+    box-shadow: 0px 0px 2px 1px #767575 inset;
 
 }
 
@@ -276,7 +285,7 @@ flex-direction: column;
     background-color: #9B9995;
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
-    box-shadow: -2px 0px #767575;
+    box-shadow: 0px 0px 2px 1px #767575 inset;
 }
 
 
@@ -289,7 +298,7 @@ flex-direction: column;
     background-color: #9b9999;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
-    box-shadow: -2px 0px #767575;
+    box-shadow: 0px 0px 2px 1px #767575 inset;
 }
 
 .right{
@@ -301,6 +310,7 @@ flex-direction: column;
     background-color: #9b9999;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
+    box-shadow: 0px 0px 2px 1px #767575 inset;
 }
 
 .item{
@@ -330,7 +340,7 @@ flex-direction: column;
 
 .description{
   background-color: rgb(247, 247, 234);
-  margin:0;
+  margin:2px;
   padding:10px;
   text-align:left;
   border: solid #f0c544;
